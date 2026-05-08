@@ -1,12 +1,11 @@
- export type parcial= number |"";
-
+export type parcial = number | "";
 
 export interface Parciales {
-    Parcial1: parcial;
-    Parcial2: parcial;
-    Parcial3: parcial;
+    parcial1: parcial; // Minúscula para coincidir con el hook
+    parcial2: parcial;
+    parcial3: parcial;
     total: number;
 }
 
-export type NombreParcial= keyof Omit<Parciales,"total">;
+export type NombreParcial = keyof Omit<Parciales, "total">;
 
